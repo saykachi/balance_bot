@@ -77,8 +77,23 @@ async def show_daily_rating(update: Update, context: ContextTypes.DEFAULT_TYPE):
 # Функция для отображения выбора администратора
 async def show_admin_selection(update: Update):
     keyboard = [
-        [InlineKeyboardButton("🧑‍💼 Админ 1", callback_data="admin_1")],
-        [InlineKeyboardButton("🧑‍💼 Админ 2", callback_data="admin_2")]
+        [InlineKeyboardButton("🧑‍💼 CREATOR(LOYALFANS)", callback_data="admin_1")],
+        [InlineKeyboardButton("WARDEN (LOYALFANS)", callback_data="admin_2")],
+        [InlineKeyboardButton("GRIFFIT (LOYALFANS)", callback_data="admin_3")],
+        [InlineKeyboardButton("VALKYRIE (LOYALFANS)", callback_data="admin_4")]
+        [InlineKeyboardButton("ULTIMATUM (LOYALFANS)", callback_data="admin_5")],
+        [InlineKeyboardButton("🧑‍💼 DEADPOOL (LOYALFANS)", callback_data="admin_6")],
+        [InlineKeyboardButton("LEVIKS (LOYALFANS)", callback_data="admin_7")],
+        [InlineKeyboardButton("TANOS (LOYALFANS)", callback_data="admin_8")],
+        [InlineKeyboardButton("JACONDA (LOYALFANS)", callback_data="admin_9")],
+        [InlineKeyboardButton("GALLILEO (LOYALFANS)", callback_data="admin_10")],
+        [InlineKeyboardButton("BUTCHER (LOYALFANS)", callback_data="admin_11")],
+        [InlineKeyboardButton("🧑‍💼 IMMERSION (MANYVIDS)", callback_data="admin_12")],
+        [InlineKeyboardButton("GUTS (MANYVIDS)", callback_data="admin_13")],
+        [InlineKeyboardButton("ETERIAL (MANYVIDS)", callback_data="admin_14")],
+        [InlineKeyboardButton("HUNTER (MANYVIDS)", callback_data="admin_15")],
+        [InlineKeyboardButton("MYSTERION (MANYVIDS)", callback_data="admin_16")],
+        [InlineKeyboardButton("SCARLETT (MANYVIDS)", callback_data="admin_17")]
     ]
     reply_markup = InlineKeyboardMarkup(keyboard)
     await update.message.reply_text("👔 *Выберите администратора:*", reply_markup=reply_markup, parse_mode='Markdown')
@@ -95,8 +110,23 @@ async def show_platform_selection(update: Update):
 # Функция для создания клавиатуры выбора администратора
 async def admin_selection_markup():
     keyboard = [
-        [InlineKeyboardButton("🧑‍💼 Админ 1", callback_data="admin_1")],
-        [InlineKeyboardButton("🧑‍💼 Админ 2", callback_data="admin_2")]
+        [InlineKeyboardButton("🧑‍💼 CREATOR(LOYALFANS)", callback_data="admin_1")],
+        [InlineKeyboardButton("WARDEN (LOYALFANS)", callback_data="admin_2")],
+        [InlineKeyboardButton("GRIFFIT (LOYALFANS)", callback_data="admin_3")],
+        [InlineKeyboardButton("VALKYRIE (LOYALFANS)", callback_data="admin_4")]
+        [InlineKeyboardButton("ULTIMATUM (LOYALFANS)", callback_data="admin_5")],
+        [InlineKeyboardButton("🧑‍💼 DEADPOOL (LOYALFANS)", callback_data="admin_6")],
+        [InlineKeyboardButton("LEVIKS (LOYALFANS)", callback_data="admin_7")],
+        [InlineKeyboardButton("TANOS (LOYALFANS)", callback_data="admin_8")],
+        [InlineKeyboardButton("JACONDA (LOYALFANS)", callback_data="admin_9")],
+        [InlineKeyboardButton("GALLILEO (LOYALFANS)", callback_data="admin_10")],
+        [InlineKeyboardButton("BUTCHER (LOYALFANS)", callback_data="admin_11")],
+        [InlineKeyboardButton("🧑‍💼 IMMERSION (MANYVIDS)", callback_data="admin_12")],
+        [InlineKeyboardButton("GUTS (MANYVIDS)", callback_data="admin_13")],
+        [InlineKeyboardButton("ETERIAL (MANYVIDS)", callback_data="admin_14")],
+        [InlineKeyboardButton("HUNTER (MANYVIDS)", callback_data="admin_15")],
+        [InlineKeyboardButton("MYSTERION (MANYVIDS)", callback_data="admin_16")],
+        [InlineKeyboardButton("SCARLETT (MANYVIDS)", callback_data="admin_17")]
     ]
     return InlineKeyboardMarkup(keyboard)
 
