@@ -2,9 +2,6 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, CallbackQueryHandler, MessageHandler, filters, ContextTypes
 import sqlite3
 from datetime import datetime
-from keep_alive import keep_alive
-
-keep_alive()
 
 # Настроим соединение с базой данных
 database_file = 'database.db'
